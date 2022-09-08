@@ -1,0 +1,42 @@
+    <NativeRouter>
+      
+      
+      <Routes>
+      <Route path="/"   element={<Home/>}/>
+      <Route path="/register"   element={<Register/>}/>
+      <Route path="/portal"  element={<Portal/>} />
+
+
+  
+      </Routes>
+
+
+    </NativeRouter>
+
+
+
+
+
+
+           <View style={styles.content}>
+               <Text> id is : {id}</Text>
+               <Text style={styles.top}>UserData</Text>
+            <Text>{display()}</Text>
+
+            <TouchableOpacity  style={styles.button}  onPress={()=>{
+                navigation.navigate('Book')
+            }}>
+                <Text style={styles.btn_text}>Book Unit</Text>
+                 </TouchableOpacity>
+
+            <TouchableOpacity  style={styles.button}  onPress={logout}>
+                <Text style={styles.btn_text}>Logout</Text>
+                 </TouchableOpacity>
+              
+
+               
+
+
+
+
+           </View>
